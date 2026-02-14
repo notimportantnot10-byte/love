@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>С 14 февраля, Ульяна ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ffc0cb, #ff6b81, #ff8fa3);
+      padding: 20px;
+    }.card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(15px);
+  border-radius: 24px;
+  padding: 40px;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #e11d48;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.love {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e11d48;
+  margin-bottom: 25px;
+  animation: bounce 1.5s infinite;
+}
+
+button {
+  background: #e11d48;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #be123c;
+  transform: scale(1.05);
+}
+
+.footer {
+  margin-top: 30px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  padding: 20px;
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 24px;
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  transform: scale(0.8);
+  transition: 0.3s ease;
+}
+
+.modal.active .modal-content {
+  transform: scale(1);
+}
+
+.hearts {
+  font-size: 2rem;
+  margin: 15px 0;
+}
+
+  </style>
+</head>
+<body>  <div class="card">
+    <h1>С 14 февраля, Ульяна ❤️</h1><p>
+
+Ульяна, с того момента как ты появилась в моей жизни, каждый день стал ярче, теплее и наполнен смыслом. Ты мой свет, моя радость и самая красивая часть моего мира. </p>
+
+<p>
+
+Даже несмотря на расстояние между нами, я чувствую тебя ближе всех. Километры не могут заглушить то, как сильно ты живёшь внутри меня. Я очень сильно хочу тебя увидеть, посмотреть в твои прекрасные глаза, услышать твой голос рядом и почувствовать тепло твоей руки. Но именно это расстояние показывает, насколько ты для меня важна. Я выбираю тебя даже через города, даже через время, даже через любые испытания. </p>
+
+<div class="love">Я люблю тебя 💌</div>
+
+<button onclick="openModal()">Нажми меня 💖</button>
+
+<div class="footer">Сделано с любовью специально для тебя 💘</div>
+
+  </div>  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h2 style="color:#e11d48; margin-bottom:15px;">Ульяна, ты — моё всё 💖</h2>
+      <p>
+Если бы мне дали шанс выбрать снова,
+я бы выбрал тебя.
+Каждый раз.
+Без сомнений.
+      </p>
+      <div class="hearts">❤️❤️❤️</div>
+      <button onclick="closeModal()">Обнять тебя 🫶</button>
+    </div>
+  </div>  <script>
+    function openModal() {
+      document.getElementById('modal').classList.add('active');
+    }
+
+    function closeModal() {
+      document.getElementById('modal').classList.remove('active');
+    }
+  </script></body>
+</html>
